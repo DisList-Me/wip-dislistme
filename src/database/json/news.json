@@ -1,0 +1,14 @@
+{
+  "news": [
+    {
+      "code": "141863853587",
+      "icon": "https://i.imgur.com/O3tLsdi.png",
+      "banner": "https://media.discordapp.net/attachments/832615475878821939/861598860006522890/wallpaper.jpg?width=1246&height=701",
+      "ownerID": "676195747904880690",
+      "serverName": "Issues with posting a invite url when first adding your server",
+      "date": "10/24/2021, 3:30:00 PM",
+      "description": "Today we write to inform you of a little bug noted by some members of DisList.Me when first adding a discord server to our list.\r\n\r\nThe issue that is being caused and we noted is; When a user adds a new server and adds their servers invite url it is not being saved into our MongoDB, Users are needing to click view on there server they own and click the edit button currently re-adding their invite for their join button to work.\r\n\r\nShort Form\r\nIssue + fix\r\nIssue: First adding a new server will not accept the text input field of your invite needing to re-add invite via edit server buttons.\r\nFix: Users need to post their invite again via edit on their server\r\n(Please Note: This issue is currently being worked on)",
+      "views": 0
+    }
+  ]
+}
