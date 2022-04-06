@@ -30,11 +30,3 @@ moved recently bumped servers to top of index.ejs page
 [vCodes](https://vcodes.xyz/)
 <br>
 [DisBots](https://disbots.xyz/)
-
-<br>
-# 💨 Run the projects
-[Remix on Glitch](https://glitch.com/edit/#!/import/github/dislist/dislist.me)
-<br>
-[Run on Repl.it](https://repl.it/github/dislist/dislist.me)<br>
-<br>
-[Deploy Heroku](https://heroku.com/deploy?template=https://github.com/dislist/dislist.me)
