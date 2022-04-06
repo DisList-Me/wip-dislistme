@@ -14,7 +14,7 @@ moved recently bumped servers to top of index.ejs page
 + fixed some minor issues along the road theme is to be redone this script is to-be slowly done by myself and hopefully others who would like to help im running on node - v12.22.7 via plesk to put this out publicly and works fine works via replit as well!
 
 # Modified by
-<a href="https://dislist.me/user/676195747904880690">👤 ⚔Ben#0001</a><br>
+<a href="https://dislist.me/team">ThunderM16#4181 & The DisList.Me Team</a><br>
 
 # DisList.Me
 **Discord Server:** [https://dislist.me/dc](https://dislist.me/dc)
