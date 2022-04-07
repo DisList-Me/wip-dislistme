@@ -132,8 +132,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -143,12 +142,16 @@
               </div>
             <p translate="no" class="card-title is-size-4"><%= a.name %>
             <% if(guildCache.partnered === true) { %>
-              <span data-tooltip="Partnered Discord" data-tooltip-location="top">
+              <span data-tooltip="Partnered Server" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -190,8 +193,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -204,9 +206,13 @@
               <span data-tooltip="Partnered Discord" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -235,8 +241,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -249,9 +254,13 @@
               <span data-tooltip="Partnered Discord" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -280,8 +289,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -294,9 +302,13 @@
               <span data-tooltip="Partnered Discord" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -326,8 +338,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -340,9 +351,13 @@
               <span data-tooltip="Partnered Discord" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -378,8 +393,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
           <div class="card-body">
@@ -388,13 +402,17 @@
             <span data-tooltip="Members" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-users"></i>&nbsp;<%= guildCache.memberCount > 999 ? guildCache.memberCount.toLocaleString().split(',')[0]+'k' : guildCache.memberCount %></span>
               </div>
             <p translate="no" class="card-title is-size-4"><%= a.name %>
-           <% if(guildCache.partnered === true) { %>
+            <% if(guildCache.partnered === true) { %>
               <span data-tooltip="Partnered Discord" data-tooltip-location="top">
               <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
-            <% if(a.id == 891125044670005260) { %>
+            <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fal fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
@@ -432,8 +450,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
-          <div class="disbots-card-custom-avatar">
+ <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>          <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
 

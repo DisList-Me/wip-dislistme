@@ -14,7 +14,7 @@
       <div class="col-md-6 col-lg-4 pb-3">
         <div data-aos="fade-left">
         <div class="card disbots-card-custom bg-disbots border-white border-0">
-          <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : '../img/undefined_back.png' %>);" title="Disbots.xyz" ></div>
+         <div class="disbots-card-custom-img" onerror="backImgError(this);" style="background-image: url(<%= guildCache.banner ? 'https://cdn.discordapp.com/banners/'+a.id+'/'+guildCache.banner+'?size=1024' : 'https://cdn.discordapp.com/banners/955968674446078008/9ed4bba059c06e2501c1eab94017366b?size=1024' %>);" title="dislist.me" ></div>
           <div class="disbots-card-custom-avatar">
             <img class="img-fluid" title="Discord Bot Avatar" onerror="imgError(this);" src="<%=a.icon%>" alt="Avatar" />
           </div>
@@ -31,10 +31,18 @@
             <% } %>
             <% if(a.id == 955968674446078008) { %>
               <span data-tooltip="Official Server" data-tooltip-location="top">
-              <i class="fad fa-server mr-1"></i></span>
+              <i class="fad fa-server has-text-success"></i></span>
+            <% } %>
+			<% if(a.id == 955968674446078008) { %>
+              <span data-tooltip="Official Support Server" data-tooltip-location="top">
+              <i class="fa fa-question-circle has-text-success"></i></span>
             <% } %>
             <% if(a.premium === "Premium") { %>
               <span data-tooltip="Premium Server" data-tooltip-location="top"><i class="fad fa-bahai has-text-success"></i></span>
+            <% } %>
+            <% if(guildCache.partnered === true) { %>
+              <span data-tooltip="Partnered Server" data-tooltip-location="top">
+              <i class="fad fa-handshake bodyIcon"></i></span>
             <% } %>
             </p>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
@@ -105,7 +113,7 @@
       </div>
     <% }} %>
 </div> 
- <% if(botdata.filter(a => a.promoted == "Promoted").length > 3) { %>
+ <% if(botdata.filter(a => a.promoted == "Promoted").length > 1) { %>
   <center>
     <a title="disbot" href="/bots/promoted" class="btn btn-more has-text-info">Show more Promoted bots</a>
   </center>
@@ -129,9 +137,16 @@
             <span data-tooltip="Server Count" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-server"></i>&nbsp;<%= a.serverCount || "N/A" %></span>
               </div>
             <p translate="no" class="card-title is-size-4"><%= a.username %>
+             <% if(a.promoted === "Promoted") {%>
+             <span data-tooltip="Promoted Bot" data-tooltip-location="top"><i class="fad fa-diamond has-text-primary"></i></span></a>
+                     <% } %>
             <% if(a.certificate === "Certified") { %>
-              <span data-tooltip="Verified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
+              <span data-tooltip="Certified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
             <% } %>
+ <% if(a.botID === "957001604169605140") {%>
+                <span data-tooltip="Official Bot"
+					  data-tooltip-location="top"><i class="fad fa-server has-text-primary"></i></span>
+            <% } %><p>
             </p>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
           </div>
@@ -143,11 +158,11 @@
       </div>
       </div>
             <% }) %>
-             </div>
-</div>
-  <% if(botdata.filter(a => a.certificate == "Certified").length > 1) { %>
+</div> 
+	      </div>
+ <% if(botdata.filter(a => a.certificate == "Certified").length > 6) { %>
   <center>
-    <a title="disbots" href="/bots/certified" class="btn btn-more has-text-warning">Show more certified bots</a>
+    <a title="disbot" href="/bots/certified" class="btn btn-more has-text-info">Show more Certified bots</a>
   </center>
   <% } %>
 <br><br><br><br>
@@ -170,9 +185,16 @@
                 <span data-tooltip="Server Count" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-server"></i>&nbsp;<%= a.serverCount || "N/A" %></span>
               </div>
              <p translate="no" class="card-title is-size-4"><%= a.username %>
+                       <% if(a.promoted === "Promoted") {%>
+             <span data-tooltip="Promoted Bot" data-tooltip-location="top"><i class="fad fa-diamond has-text-primary"></i></span></a>
+                     <% } %>
             <% if(a.certificate === "Certified") { %>
-              <span data-tooltip="Verified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
+              <span data-tooltip="Certified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
             <% } %>
+ <% if(a.botID === "957001604169605140") {%>
+                <span data-tooltip="Official Bot"
+					  data-tooltip-location="top"><i class="fad fa-server has-text-primary"></i></span>
+            <% } %><p>
             </p>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
           </div>
@@ -184,7 +206,13 @@
         </div>
       </div>
     <% }) %>
-
+</div> 
+ <% if(botdata.filter(a => a.status == "Approved").length > 1) { %>
+  <center>
+    <a title="disbot" href="/bots" class="btn btn-more has-text-info">Show more Top Voted bots</a>
+  </center>
+  <% } %>
+<br><br><br><br>
          </div>
   <br><br><br><br>
 <div class="column">
@@ -206,9 +234,16 @@
                 <span data-tooltip="Server Count" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-server"></i>&nbsp;<%= a.serverCount || "N/A" %></span>
               </div>
             <p translate="no" class="card-title is-size-4"><%= a.username %>
+            <% if(a.promoted === "Promoted") {%>
+             <span data-tooltip="Promoted Bot" data-tooltip-location="top"><i class="fad fa-diamond has-text-primary"></i></span></a>
+                     <% } %>
             <% if(a.certificate === "Certified") { %>
-              <span data-tooltip="Verified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
+              <span data-tooltip="Certified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
             <% } %>
+ <% if(a.botID === "957001604169605140") {%>
+                <span data-tooltip="Official Bot"
+					  data-tooltip-location="top"><i class="fad fa-server has-text-primary"></i></span>
+            <% } %><p>
             </p>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
           </div>
@@ -257,9 +292,16 @@
                 <span data-tooltip="Server Count" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-server"></i>&nbsp;<%= a.serverCount || "N/A" %></span>
               </div>
             <p translate="no" class="card-title is-size-4"><%= a.username %>
+            <% if(a.promoted === "Promoted") {%>
+             <span data-tooltip="Promoted Bot" data-tooltip-location="top"><i class="fad fa-diamond has-text-primary"></i></span></a>
+                     <% } %>
             <% if(a.certificate === "Certified") { %>
-              <span data-tooltip="Verified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
+              <span data-tooltip="Certified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
             <% } %>
+ <% if(a.botID === "957001604169605140") {%>
+                <span data-tooltip="Official Bot"
+					  data-tooltip-location="top"><i class="fad fa-server has-text-primary"></i></span>
+            <% } %><p>
             </p>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
           </div>

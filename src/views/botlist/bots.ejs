@@ -28,9 +28,16 @@
                 <span data-tooltip="Server Count" data-tooltip-location="left" class="badge badge-stats mt-1 w-100"><i class="fad fa-server"></i>&nbsp;<%= a.serverCount || "N/A" %></span>
               </div>
             <h4 translate="no" class="card-title"><%= a.username %>
+            <% if(a.promoted === "Promoted") {%>
+             <span data-tooltip="Promoted Bot" data-tooltip-location="top"><i class="fad fa-diamond has-text-primary"></i></span></a>
+                     <% } %>
             <% if(a.certificate === "Certified") { %>
-              <span data-tooltip="Verified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
+              <span data-tooltip="Certified Bot" data-tooltip-location="top"><i class="fad fa-badge-check bodyIcon"></i></span>
             <% } %>
+ <% if(a.botID === "957001604169605140") {%>
+                <span data-tooltip="Official Bot"
+					  data-tooltip-location="top"><i class="fad fa-server has-text-primary"></i></span>
+            <% } %><p>
             </h4>
             <p translate="no" class="card-text disbotsbotDesc"><%= a.shortDesc %></p>
           </div>
