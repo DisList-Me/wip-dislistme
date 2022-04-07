@@ -33,7 +33,7 @@
     "jimp": "^0.16.1",
     "jquery": "^3.6.0",
     "level-session-store": "^2.2.0",
-    "marked": "^2.0.0",
+    "marked": "^4.0.10",
     "memorystore": "^1.6.4",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
