@@ -7,13 +7,13 @@
   --text-section: #fff;
   --text-section-hover: #fff;
   --bg-body: #1E2023;
-  --button-green: #5865F2;
+  --button-green: #e3635b;
   --button-green-hover: #4554F2;
   --button-text: #FFF;
   --color-result-shadow: #1E2023;
   --color-result-text: #fff;
   --body-text: #fff;
-  --body-icon: #5865F2;
+  --body-icon: #57d0e6;
   --bg-button-dark: #1E2023;
   --bg-button-dark-hover: #26282B;
   --bg-footer: #27282D;
@@ -32,12 +32,12 @@
 
 [data-theme="light"] {
   --bg-card: #D4D5D7;
-  --bg-section: #5865F2;
+  --bg-section: #23272a;
   --bg-section-hover: #ECECEC;
   --text-section-hover: #000;
   --text-section: #fff;
   --bg-body: #F5F5F5;
-  --button-green: #5865F2;
+  --button-green: #7892af;
   --button-green-hover: #4554F2;
   --button-text-section: #fff;
   --button-text: #000;
@@ -70,26 +70,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+  width: 6px
 }
 
 ::-webkit-scrollbar-track {
   background: var(--bg-body);   
 }
 
-::-webkit-scrollbar-track-piece {
-  background-color: #EEE;
-  border-left: 1px solid #CCC
-}
-
-::-webkit-scrollbar-thumb:vertical,
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: rgb(211, 39, 91)
-}
- 
-::-webkit-scrollbar-thumb:vertical:hover,
-::-webkit-scrollbar-thumb:horizontal:hover {
-  background-color: rgb(211, 39, 91)
+::-webkit-scrollbar-thumb {
+  border: 1px solid #1E2023;
+  background-color: var(--bg-section);  
 }
 
 .bg-disbots {
@@ -2468,7 +2458,7 @@ color: #fff!important;
 
 .jumbotron.disbots{
     padding-top: 8px!important;
-    /* background: linear-gradient(70deg, rgba(35, 39, 42, 1) 60%, rgba(35, 39, 42, 0.2) 70%), url(https://disbots.xyz/img/section.svg); */
+    background: linear-gradient(70deg, rgba(35, 39, 42, 1) 60%, rgba(35, 39, 42, 0.2) 70%), url(https://dislist.me/img/section.svg);
     background-color: var(--bg-section)
 }
 .bg-transparent {
