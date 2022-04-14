@@ -1,5 +1,3 @@
-# I've Moved To A New Project (Open source communication like discord with bots and voice)  https://chatnet.Me
-
 # dislist.me
 The Official DisList.Me Script Fixed Issues That Vcodes + Disbots Will Not.
 ---
