@@ -31,10 +31,21 @@ moved recently bumped servers to top of index.ejs page
 
 <br>
 # 💨 Run the projects
-[Remix on Glitch](https://glitch.com/edit/#!/import/github/dislist/wip-dislistme)
+[Remix on Glitch](https://glitch.com/edit/#!/import/github.com/DisList-Me/wip-dislistme)
 <br>
-[Run on Repl.it](https://repl.it/github/dislist/wip-dislistme)<br>
+[Run on Repl.it](https://repl.it/github.com/DisList-Me/wip-dislistme)<br>
 <br>
-[Deploy Heroku](https://heroku.com/deploy?template=https://github.com/dislist/wip-dislistme)
+[Deploy Heroku](https://heroku.com/deploy?template=https://github.com/DisList-Me/wip-dislistme)
 <br>
 [Run on Render.com](https://render.com/docs/github)
+<br>
+Using GitHubBox.com
+An easy way to import a repo to CodeSandbox via URL is with GitHubBox.com. Append 'box' to your github.com URL in between 'hub' and '.com' and it will redirect to CodeSandbox.
+
+Here's an example:
+
+Change the GitHub URL: https://github.com/reduxjs/redux/tree/master/examples/todomvc.
+
+To: https://githubbox.com/reduxjs/redux/tree/master/examples/todomvc.
+
+The result is we take the last part of the url (everything after github.com) and use it in our importer at codesandbox.io/s/github/, adding the repo to CodeSandbox.
