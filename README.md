@@ -1,5 +1,5 @@
-# dislist.me
-The Official DisList.Me Script Fixed Issues That Vcodes + Disbots Will Not.
+# DisList.Me
+The Official DisList.Me Script Fixed Some Issues + Added Some Additions
 ---
 > Added Logout Menu + Extra Url's In Profile Menu
 Fixed Server Invites Not Be Taken Into MongoDB do to not adding 
